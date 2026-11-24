@@ -89,7 +89,7 @@ def require_private_access(
 
 class ChatMessage(BaseModel):
     role: str = Field(
-        regex="^(system|user|assistant)$"
+        pattern="^(system|user|assistant)$"
     )
 
     content: str = Field(
