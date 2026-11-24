@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#100b18">
+  <title>MXYZ AI</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark">M</div><div><b>MXYZ AI</b><small>ADVANCED INTELLIGENCE</small></div></div>
+      <button class="new-chat" id="newChat">＋ New chat</button>
+      <div class="nav-label">WORKSPACE</div>
+      <button class="nav-item active">◈ <span>Chat</span></button>
+      <button class="nav-item" disabled title="Direncanakan untuk versi berikutnya">⌘ <span>Coding workspace</span><em>soon</em></button>
+      <button class="nav-item" disabled title="Direncanakan untuk versi berikutnya">▧ <span>File analysis</span><em>soon</em></button>
+      <button class="nav-item" disabled title="Direncanakan untuk versi berikutnya">◷ <span>History</span><em>soon</em></button>
+      <div class="sidebar-bottom"><div class="status-dot"></div><span>Private instance</span><small>v0.1.0</small></div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><div class="mobile-brand">MXYZ AI</div><div class="mode"><span class="pulse"></span><span id="modeLabel">Checking engine…</span></div></header>
+      <section class="chat-area" id="chatArea">
+        <div class="welcome" id="welcome">
+          <div class="orb"><span>M</span></div>
+          <p class="eyebrow">YOUR PRIVATE AI WORKSPACE</p>
+          <h1>Halo, saya <span>MXYZ.</span></h1>
+          <p class="sub">Asisten untuk coding, teknologi, sains, dan pengetahuan umum.</p>
+          <div class="suggestions">
+            <button data-prompt="Jelaskan cara kerja neural network dengan contoh sederhana."><b>◉</b><span><strong>Pelajari konsep</strong><small>Jelaskan topik yang rumit</small></span></button>
+            <button data-prompt="Bantu saya merancang struktur proyek aplikasi web."><b>⌘</b><span><strong>Rancang proyek</strong><small>Mulai dari ide hingga arsitektur</small></span></button>
+            <button data-prompt="Bantu debug kode saya. Tanyakan kode dan pesan error yang diperlukan."><b>⚙</b><span><strong>Debug kode</strong><small>Analisis masalah pemrograman</small></span></button>
+            <button data-prompt="Buatkan rencana belajar teknologi yang terstruktur."><b>✧</b><span><strong>Eksplorasi ide</strong><small>Belajar dan brainstorming</small></span></button>
+          </div>
+        </div>
+        <div id="messages" class="messages"></div>
+      </section>
+      <footer class="composer-wrap">
+        <form id="chatForm" class="composer">
+          <textarea id="messageInput" rows="1" maxlength="12000" placeholder="Tanyakan sesuatu kepada MXYZ…" required></textarea>
+          <div class="composer-bottom"><span>Enter untuk kirim · Shift + Enter untuk baris baru</span><button id="sendButton" type="submit" aria-label="Kirim">↑</button></div>
+        </form>
+        <p class="disclaimer">MXYZ dapat membuat kesalahan. Periksa kembali informasi penting.</p>
+      </footer>
+    </main>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

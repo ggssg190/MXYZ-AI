@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+*.bak
+*.backup
+.venv/
+venv/
+.git/
+MXYZ-AI-v0.1/
